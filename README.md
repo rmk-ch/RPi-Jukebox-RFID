@@ -1,3 +1,16 @@
+# Chinder Musigbox
+Adi, Jürg, Danick, Roman
+
+
+Üsi Date sind under [_projekt](https://github.com/rmk-ch/RPi-Jukebox-RFID/tree/develop/_projekt) z finde!
+Rest isch Software ;)
+
+-------------------------
+
+
+
+
+
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/MiczFlor/RPi-Jukebox-RFID/develop)
 
 ![Python Tests](https://github.com/MiczFlor/RPi-Jukebox-RFID/workflows/Python%20package/badge.svg) ![Install Script Tests](https://github.com/MiczFlor/RPi-Jukebox-RFID/workflows/Docker%20Test%20Installation/badge.svg) 
