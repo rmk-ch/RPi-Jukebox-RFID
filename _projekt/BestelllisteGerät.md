@@ -1,0 +1,24 @@
+# Bestellliste
+Artikel | Anzahl pro Gerät | Einzelpreis | Totalpreis | Link | Status
+:- | :- | :- | :- | :- | :-
+Raspi 4 2GB | 1 | Fr. 38.90 | Fr. 38.90| [pi-shop.ch](https://www.pi-shop.ch/raspberry-pi-4-model-b-2gb) | 4x Geliefert
+SD Karte 32GB | 1 | EUR 8.87 (Fr. 12.50) | EUR 8.87 | [berrybase](https://www.berrybase.de/raspberry-pi-co/raspberry-pi/speicherkarten/sandisk-extreme-micro-sdhc-a1-uhs-i-u3-speicherkarte-43-adapter-32gb?c=347) ([amazon](https://www.amazon.de/SanDisk-Extreme-microSDHC-Speicherkarte-SD-Adapter/dp/B06XWMQ81P/ref=sr_1_2?__mk_de_DE=ÅMÅŽÕÑ&dchild=1&keywords=sandisk+extreme+32gb&qid=1607455423&sr=8-2), [digitec](https://www.digitec.ch/de/s1/product/sandisk-extreme-microsd-a1-microsdhc-32gb-u3-uhs-i-speicherkarte-6405532)) | 1x Geliefert
+Powerbank inkl. USB Kabel | 1 | EUR 20.92 | | [berrybase](https://www.berrybase.de/raspberry-pi-co/raspberry-pi/stromversorgung/powerbanks-mobile-akkus/quickcharge-powerbank-mit-qc3.0-und-usb-c-15.000-mah-schwarz-grau) | 1x Bestellt
+OnOffShim | 1 | EUR 6.30 | | [berrybase](https://www.berrybase.de/raspberry-pi-co/raspberry-pi/gpio-hats-phats/power-management/onoff-shim-f-252-r-raspberry-pi) | 1x Bestellt
+Lautstärke Encoder | 1 | EUR 1.35 | | [berrybase](https://www.berrybase.de/bauelemente/passive-bauelemente/potentiometer/drehimpulsgeber/drehregler/rotary-encoder-mit-breakoutboard) ([conrad](https://www.conrad.ch/de/p/joy-it-com-ky040re-1-st-1695709.html?gclid=Cj0KCQiA2uH-BRCCARIsAEeef3l8aDEFG1YgxusGcncUSMk-RAFjgHMdkh_RTTDwRWJwaPZX6K8zMT4aArfnEALw_wcB&utm_source=google-shopping-de&utm_medium=search&utm_campaign=shopping-online-de&utm_content=shopping-ad_cpc&WT.srch=1&ef_id=Cj0KCQiA2uH-BRCCARIsAEeef3l8aDEFG1YgxusGcncUSMk-RAFjgHMdkh_RTTDwRWJwaPZX6K8zMT4aArfnEALw_wcB%3AG%3As)) | 1x  Geliefert, getestet
+Hifi berry miniamp | 1 | 20.37EUR| | [berrybase](https://www.berrybase.de/raspberry-pi-co/raspberry-pi/gpio-hats-phats/audio/hifiberry-miniamp) ([amazon](https://www.amazon.de/HiFiBerry-MiniAmp-grün/dp/B01NBAY8B0/ref=sr_1_2?__mk_de_DE=ÅMÅŽÕÑ&crid=183X54NM6A72V&dchild=1&keywords=hifiberry+mini&qid=1607666636&sprefix=hifi+berr%2Caps%2C176&sr=8-2)) | 3x offen
+NFC Reader  | 1 | 12.99EUR | | [amazon](https://www.amazon.de/dp/B082F8G4T2/ref=dp_prsubs_1) | Offen
+Lautsprecher 6.35cm | | EUR 5.42 | | [amazon](https://www.amazon.de/gp/product/B004GA0LN6/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) | Offen
+USB-C Einbaubuchse | 1 | 15.70EUR | | [amazon](https://www.amazon.de/InLine-33441G-Adapterkabel-Stecker-Einbaubuchse/dp/B01MS2DPUX/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=usb-c+einbau&qid=1609324161&sr=8-4)
+GPIO Expansion | 1 | EUR 4 | | [amazon](https://www.amazon.de/gp/product/B07TZGC941/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=sl1&tag=splittitde-21&linkId=f1741cf709be81926e59e5d395048b4c&language=de_DE) | 5x Geliefert
+Visaton Schutzgitter Fr. 7 | 2 | Fr. 7.05 | 14.10 | [distrelec](https://www.distrelec.ch/de/schutzgitter-frs-visaton-gitter-frs/p/11094921) | Offen
+Drehregler | 4 | Fr. 3.20 | Fr. 12.80 |  | Offen
+Endschalter Ohren | 8 | Fr. 2.25 | Fr. 18 | [conrad](https://www.conrad.ch/de/p/zf-mikroschalter-db1c-a1lb-250-v-ac-6-a-1-x-ein-ein-tastend-1-st-703606.html) | Offen
+Arcade Button (Play mit LED) | 4 | Fr. 5 | Fr. 20 | [play-zone](https://www.play-zone.ch/de/arcade-button-24mm-grun-transparent-mit-led.html) | Offen
+LED Set | 1 | Fr. 8 | Fr. 8 | [conrad](https://www.conrad.ch/de/p/kemo-s093-led-sortiment-182224.html?gclid=Cj0KCQiA2uH-BRCCARIsAEeef3kbOBzUVDPrTJxXPeNMIHwYqMswHvVF0VpXC9wUbrnAev6OZpgMGZUaAuUgEALw_wcB&utm_source=google-shopping-de&utm_medium=search&utm_campaign=shopping-online-de&utm_content=shopping-ad_cpc&WT.srch=1&ef_id=Cj0KCQiA2uH-BRCCARIsAEeef3kbOBzUVDPrTJxXPeNMIHwYqMswHvVF0VpXC9wUbrnAev6OZpgMGZUaAuUgEALw_wcB%3AG%3As) | Offen
+NFC Tags | | | | [shopnfc](https://www.shopnfc.com/de/7-nfc-stickers) | Offen
+
+# Roman Privat
+https://www.berrybase.de/werkstatt/verbrauchsmaterial/schrumpfschlauch/schrumpfschlauch-set-100-teilig-schwarz?c=413
+https://www.berrybase.de/werkstatt/werkzeug/sonstiges/dritte-hand-mit-echtglas-lupe?c=413
+https://www.berrybase.de/bauelemente/passive-bauelemente/widerstaende/metallschichtwiderstaende/0-25w-1/525-teiliges-metallschichtwiderstands-sortiment-in-kunststoffbox?c=168
