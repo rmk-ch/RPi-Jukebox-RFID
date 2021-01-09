@@ -19,5 +19,4 @@ Endschalter Ohren | 8 | Fr. 2.25 | Fr. 18 | [conrad](https://www.conrad.ch/de/p/
 Arcade Button (Play mit LED) | 4 | Fr. 5 | Fr. 20 | [play-zone](https://www.play-zone.ch/de/arcade-button-24mm-grun-transparent-mit-led.html) | Offen
 LED Set | 1 | Fr. 8 | Fr. 8 | [conrad](https://www.conrad.ch/de/p/kemo-s093-led-sortiment-182224.html?gclid=Cj0KCQiA2uH-BRCCARIsAEeef3kbOBzUVDPrTJxXPeNMIHwYqMswHvVF0VpXC9wUbrnAev6OZpgMGZUaAuUgEALw_wcB&utm_source=google-shopping-de&utm_medium=search&utm_campaign=shopping-online-de&utm_content=shopping-ad_cpc&WT.srch=1&ef_id=Cj0KCQiA2uH-BRCCARIsAEeef3kbOBzUVDPrTJxXPeNMIHwYqMswHvVF0VpXC9wUbrnAev6OZpgMGZUaAuUgEALw_wcB%3AG%3As) | Offen
 USB-C Einbaubuchse | 1 | 13.75EUR | | [amazon](https://www.amazon.de/InLine-33441G-Adapterkabel-Stecker-Einbaubuchse/dp/B01MS2DPUX/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=usb-c+einbau&qid=1609324161&sr=8-4)
-
-Diverse Kabel (Jumper/Dupont)
+Kabelset 20cm | 1 | EUR4.12 | | 
