@@ -1,9 +1,13 @@
 # Anleitung Phoniebox
 <img src="Mechanik/Rendering2.jpg" alt="Phoniebox" height="400" />
 
+- Konstruktion/Design/Laser: Danick Brühlmann
+- Elektronik/Software: Roman Koller (basierend auf https://github.com/MiczFlor/RPi-Jukebox-RFID)
+- Holzbau/CNC: Adi Scherrer
+- Ursprüngliche Idee: www.phoniebox.de 
 
 ## Beschreibung
-- Abspielen von folgenden Quellen:
+- Abspielen von vielen Quellen:
   - Spotify
   - Youtube
   - MP3 ab SD-Karte
@@ -16,6 +20,7 @@
 - Zunge leuchtet, wenn Musikdienst bereit ist (bis System ausgeschaltet)
 - Aufladen des Akkus und gleichzeitiger Betrieb ist nicht möglich
 - Empfehlung: Konfiguriert euch einen NFC-Chip, der die IP-Adresse vorliest
+- Hochladen von MP3s auf SD-Karte über Windows-Freigabe (Benutzername/Passwort gleich wie Kommandzeilenzugang) oder Webinterface
 
 ## Webinterface
 1. Herausfinden, welche IP-Adresse die Phoniebox hat. Möglichkeiten:
