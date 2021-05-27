@@ -1,10 +1,5 @@
 # Anleitung Phoniebox
-<img src="Mechanik/Rendering2.jpg" alt="Phoniebox" height="400" />
-
-- Konstruktion/Design/Laser: Danick Brühlmann
-- Elektronik/Software: Roman Koller (basierend auf https://github.com/MiczFlor/RPi-Jukebox-RFID)
-- Holzbau/CNC: Adi Scherrer
-- Ursprüngliche Idee: www.phoniebox.de 
+<img src="Mechanik/phoniebox-final.png" alt="Phoniebox" height="400" />
 
 ## Beschreibung
 - Abspielen von vielen Quellen:
@@ -68,39 +63,46 @@
     5. SD-Karte wieder in Raspi einsetzen und starten
     6. Falls nicht funktioniert, nochmals überprüfen, ob UNIX-Zeilenenden gespeichert wurde und ob SSID und PSK korrekte Gross-/Kleinschreibung haben
 
-## Kommandozeile
-Über SSH (WLAN, Ethernet) oder mit Bildschirm (HDMI) und Tastatur
+## Login
+Über SSH (WLAN, Ethernet) oder mit Bildschirm (HDMI) und Tastatur oder über Netzwerkfreigabe (Windows Explorer \\192.168.xxx.xxx)
 
-Benutzername: pi, Passwort: 
+Benutzername: pi, Passwort: CncLaserLinuxli
 
 Wichtige Kommandos:
 ```
 sudo pip3 install mopidy-Iris mopidy_spotify mopidy --upgrade
 sudo systemctl restart mopidy
 cd RPi-Jukebox-RFID; git pull
+sudo systemctl restart phoniebox-gpio-control.service
+sudo journalctl -u phoniebox-gpio-control.service
 ```
 
 
 ## Verdrahtung / Pinout
-Beschreibung       | Modul Pin | Raspi HW Pin  | Raspi Pin name | Farbe
-:----------------- | :---------| :------------ | :------------- | :-
-Hifiberry PCM CLK  | 32 | 32 | GPIO12,PWM0     | -
-Hifiberry PCM FS   | 35 | 35 | GPIO19,PCM_FS   | -
-Hifiberry PCM DIN  | 38 | 38 | GPIO20,PCM_DIN  | -
-Hifiberry PCM DOUT | 40 | 40 | GPIO21,PCM_DOUT | -
-Volume CLK         | 1  | 29 | GPIO5  | ws
-Volume DT          | 2  | 31 | GPIO6  | br
-Volume SW (Taster) | 3  | 13 | GPIO27 | or
-Volume 3V3         | 4  |    | 3V3    | rt
-Volume GND         | 5  |    | GND    | sw
-Taster weiter +    |    | 16 | GPIO23 | vi
-Taster weiter -    |    | 14 | GND    | bl
-Taster zurück +    |    | 15 | GPIO22 | gn
-Taster zurück -    |    | 9  | GND    | ge
+Beschreibung                      | Modul Pin | Raspi HW Pin  | Raspi Pin name | Farbe
+:-------------------------------- | :---------| :------------ | :------------- | :-
+Hifiberry PCM CLK                 | 32 | 32 | GPIO12,PWM0     | -
+Hifiberry PCM FS                  | 35 | 35 | GPIO19,PCM_FS   | -
+Hifiberry PCM DIN                 | 38 | 38 | GPIO20,PCM_DIN  | -
+Hifiberry PCM DOUT                | 40 | 40 | GPIO21,PCM_DOUT | -
+Volume CLK                        | 1  | 29 | GPIO5  | ws
+Volume DT                         | 2  | 31 | GPIO6  | br
+Volume SW (Taster)                | 3  | 13 | GPIO27 | or
+Volume 3V3                        | 4  |    | 3V3    | rt
+Volume GND                        | 5  |    | GND    | sw
+Taster weiter +                   |    | 16 | GPIO23 | vi
+Taster weiter -                   |    | 14 | GND    | bl
+Taster zurück +                   |    | 15 | GPIO22 | gn
+Taster zurück -                   |    | 9  | GND    | ge
+RFID Karte aktiv                  |    | 22 | GPIO25 | gr
 LED Ready (rot, Zunge)            |    | 18 | GPIO24 | vi
 LED Ready (rot, Zunge) GND        |    | 20 | GND    | gr
 LED Boot (weiss, Augenbrauen)     |    | 33 | GPIO13 | gn
 LED Boot (weiss, Augenbrauen) GND |    | 39 | GND    | bl
-Shutdown Taster                   | OnOffShim  | 11 | GPIO17 | sw/ws
+Shutdown Taster                   |    | 11 | GPIO17 | sw/ws
 
 <img src="Elektronik/Verdrahtung.jpg" height="400" />
+
+## Basis
+Idee von www.phoniebox.de, 
+Code basiert auf https://github.com/MiczFlor/RPi-Jukebox-RFID
