@@ -64,7 +64,7 @@
     6. Falls nicht funktioniert, nochmals überprüfen, ob UNIX-Zeilenenden gespeichert wurde und ob SSID und PSK korrekte Gross-/Kleinschreibung haben
 
 ## Login
-Über SSH (WLAN, Ethernet) oder mit Bildschirm (HDMI) und Tastatur oder über Netzwerkfreigabe (Windows Explorer \\192.168.xxx.xxx)
+Über SSH (WLAN, Ethernet) oder mit Bildschirm (HDMI) und Tastatur oder über Netzwerkfreigabe (Windows Explorer \\\\192.168.xxx.xxx)
 
 Benutzername: pi, Passwort: CncLaserLinuxli
 
