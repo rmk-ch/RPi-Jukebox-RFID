@@ -1,21 +1,22 @@
 # Anleitung Phoniebox
-<img src="Mechanik/phoniebox-final.png" alt="Phoniebox" height="400" />
+<img src="Mechanik/phoniebox-final.png" alt="Phoniebox" width="100%" />
 
 ## Beschreibung
 - Abspielen von vielen Quellen:
   - Spotify
   - Youtube
   - MP3 ab SD-Karte
-- Sound wird mit Tonie gestartet
+- Sound wird mit Aufsetzen eines Tonie gestartet
   - Tonie hat Seriennummer, wird über Webinterface mit Aktion/Sound verknüpft
-- Stopp über Play/Pause Knopf (Lauttärkeregler drücken). Stopp über Tonie entfernen nicht möglich
-- Lautstärkeschritte, maximale Lautstärker im Webinterface einstellbar
+- Stopp mit Tonie entfernen oder über Play/Pause Knopf (Lauttärkeregler drücken)
+- Lautstärkeschritte, maximale Lautstärke im Webinterface einstellbar
 - Ausschalten: Einschaltknopf 2-3 Sekunden drücken
 - Augenbrauen leuchten, sobald Linux gestartet bis ausgeschaltet
 - Zunge leuchtet, wenn Musikdienst bereit ist (bis System ausgeschaltet)
 - Aufladen des Akkus und gleichzeitiger Betrieb ist nicht möglich
 - Empfehlung: Konfiguriert euch einen NFC-Chip, der die IP-Adresse vorliest
 - Hochladen von MP3s auf SD-Karte über Windows-Freigabe (Benutzername/Passwort gleich wie Kommandzeilenzugang) oder Webinterface
+- Viel Spass mitm Chasperli!
 
 ## Webinterface
 1. Herausfinden, welche IP-Adresse die Phoniebox hat. Möglichkeiten:
@@ -23,31 +24,35 @@
     - Suchen mit Windows-Tools (z.B. Advanced IP Scanner)
     - Mit RFID Tag, der IP-Adresse vorliest (muss aber zuerst manuell konfiguriert werden!)
 2. IP-Adresse in Browser eingeben (z.B. 192.168.254.104)
-3. Voilà!
+3. Webinterface öffnest sich für Konfiguration und Steuerung
 
 
 ## Spotify Zugangsdaten eingeben
-1. SD-Karte von Raspi in PC einstecken
-2. Mopidy ggn. Spotify authentifizieren (client_id, client_secret beantragen): https://mopidy.com/ext/spotify/#authentication
-3. Datei mopidy.conf anpassen (Benutzername und PW muss von Spotify sein, also nicht Facebook oder so):
+1. Phoniebox abschalten
+2. Mopidy ggn. Spotify authentifizieren (client_id, client_secret anfordern): https://mopidy.com/ext/spotify/#authentication
+3. SD-Karte aus Raspi entfernen und in PC einstecken
+4. Datei mopidy.conf von SD-Karte im Editor (z.B. Notepad++, nicht mit Windows Notepad) öffnen und folgende Zeilen anpassen:
     ```
     [spotify]
     username = BENUTZERNAME
     password = PASSWORT
-    client_id = ... client_id value you got from mopidy.com ...
-    client_secret = ... client_secret value you got from mopidy.com ...
+    client_id = ... client_id Wert von mopidy.com ...
+    client_secret = ... client_secret Wert von mopidy.com ...
     ```
-4. Speichern (unbedingt mit UNIX-Zeilenende, nicht mit Windows-Zeilenende!!)
-5. SD-Karte wieder in Raspi einsetzen und starten
-6. Falls nicht funktioniert, nochmals überprüfen, ob UNIX-Zeilenenden gespeichert wurde
+    Benutzername und PW muss von Spotify sein, also nicht Facebook.
+5. Speichern (unbedingt mit UNIX-Zeilenende, nicht mit Windows-Zeilenende!)
+6. SD-Karte wieder in Raspi einsetzen und starten
+7. Falls nicht funktioniert, nochmals überprüfen, ob UNIX-Zeilenenden gespeichert wurde
 
 
 ## Neues WLAN konfigurieren
 1. Wenn im WLAN eingeloggt und Webinterface verfügbar, über Webinterface unter Einstellungen neue SSID und Passwort speichern.
 2. Über SD-Karte
-    1. Phoniebox abschalten.
-    2. SD-Karte entfernen und in PC einstecken. 
-    3. Datei wpa_supplicant.conf im Editor (z.B. Notepad++, nicht mit Windows Notepad) öffnen und folgendes einfügen (ssid und psk (Passwort) anpassen)
+    1. Phoniebox abschalten
+    2. SD-Karte aus Raspi entfernen und in PC einstecken
+    3. Datei wpa_supplicant_BEISPIEL.conf.bak von SD-Karte auf lokale Festplatte kopieren
+    4. Datei wpa_supplicant_BEISPIEL.conf.bak umbenennen nach wpa_supplicant.conf
+    5. wpa_supplicant.conf im Editor (z.B. Notepad++, nicht mit Windows Notepad) öffnen und ssid und psk (Passwort) anpassen:
         ```
         ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
         update_config=1
@@ -59,9 +64,10 @@
         }
         ```
         Achtung, bei ssid und psk sind Gross-/Kleinschreibung relevant
-    4. Speichern (unbedingt mit UNIX-Zeilenende, nicht mit Windows-Zeilenende!!)
-    5. SD-Karte wieder in Raspi einsetzen und starten
-    6. Falls nicht funktioniert, nochmals überprüfen, ob UNIX-Zeilenenden gespeichert wurde und ob SSID und PSK korrekte Gross-/Kleinschreibung haben
+    6. Speichern (unbedingt mit UNIX-Zeilenende, nicht mit Windows-Zeilenende!!)
+    7. Datei von lokaler Festplatte auf SD-Karte kopieren
+    8. SD-Karte wieder in Raspi einsetzen und starten
+    9. Raspi übernimmt Datei und löscht sie von SD-Karte! Wenn also etwas nicht funktioniert hat, kann die Datei von der lokalen Festplatte geprüft und geändert werden und dann wieder auf die SD-karte geschrieben werden.
 
 ## Login
 Über SSH (WLAN, Ethernet) oder mit Bildschirm (HDMI) und Tastatur oder über Netzwerkfreigabe (Windows Explorer \\\\192.168.xxx.xxx)
@@ -101,7 +107,7 @@ LED Boot (weiss, Augenbrauen)     |    | 33 | GPIO13 | gn
 LED Boot (weiss, Augenbrauen) GND |    | 39 | GND    | bl
 Shutdown Taster                   |    | 11 | GPIO17 | sw/ws
 
-<img src="Elektronik/Verdrahtung.jpg" height="400" />
+<img src="Elektronik/Verdrahtung.jpg" width="100%" />
 
 ## Basis
 Idee von www.phoniebox.de, 
